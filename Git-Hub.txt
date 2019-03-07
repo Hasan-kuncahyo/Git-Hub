@@ -1,0 +1,36 @@
+git init = menambahkan folder .git ke dalam folder yg dituju
+git status = melihat status file yang belum/ sudah ter ADD
+git add nama.file = menambahkan ke git
+git add . = file yang belum ter ADD. semua akan langsung ter ADD
+git commit -m "isi pesan yang akan diberikan " = memberikan comentar 
+git log --oneline = melihat history dari git commit.
+
+//  Branch bisa dianggap seperti folder pernyimpanan dengan file yang sama dan isi yang bisa berbeda
+//  Default adalah *master
+git branch = membuat sub folder data (master sebagai default)
+git branch staging = membuat sub baru bernama "staging" 
+git checkout staging = posisi berpindah ke "staging" 
+git checkout -d staging = men-DELETE sub staging
+git branch -b staging = membuat sub judul baru bernama "staging" dan langsung berposisi di 
+			"staging"
+
+git checkout commit_id namafile(opsi) = menuju data di id_commit yg dituju 
+git reset commit_id = menuju id_commit yang dituju dan SEKALIGUS menghapus id_commit setelahnya/atasnya
+git reset --hard commit_id = menuju id_commit yang dituju dan SEKALIGUS menghapus seluruh datanya(codingannya)
+
+git merge nama_branch = menggabungkan kondis/data pada branch lain || contoh di master kemudian merge dev-login, maka data branch dev-login akan digabungkan dengan branch master 
+
+"conflict" = ketika me-merge ternyata pada lokasi/LINE yang sama terdapat code maka ketika di-merge terjadi conflict karena dari branch mana yang akan dipakai di Line tsb.(trus di add . yaaa!!!)
+
+git clone = salin clone pada repository, buka cmd pilih lokasi untuk menyimpan file nya,ketikan "git clone paste_link_repository"
+git push = branch suatu file setelah commit, ketikan "git push", muncul login Git-Hub, refresh repository commit tersimpan diWeb git-hub
+git push origin staging = men-push commit ketika posisi branch yang BUKAN master (branch master is default)
+
+git push --set-upstream origin staging = cukup sekali dalam men-git set branch maka kita tidak perlu menggunakan origin kembali,cukup langsung git push saja. ini berfungsi untuk men-set branch saja agar tidak direpotkan dengan origin
+git pull = ketika isi dan commit di git-hub dan dilocal, dan kita ingin menyesuaikan dengan web maka cukup menggunakan git pull, maka log --oneline commitnya akan sesuai dengan web git-hub 
+
+git fetch = menyalin branch & commit kelokasi local baru/lain dari repositories yang sudah diclone, BEDA dari git pull adalah ini lebih aman karena menyalinnya sekaligus commitnya.
+
+(PR)Pull Request dan Merge = di halaman repositories terdapat PR untuk melakukan merge suatu branch ke master dengan menggunakan Web Git-hub karena Si-pengonfirm akan tau apa saja yang akan di tambahkan.
+
+Fork = menyalin seluruh repositories suatu user git-hub ke repositoreis kita, TOMBOL-nya ada di pojok kanan atau betulisan "Fork" - tunggu maka laman akan kembali ke repositories kita sendiri ,dan repo yang kita fork tadi ditambahkan di akun kita

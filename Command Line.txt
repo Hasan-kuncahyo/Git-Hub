@@ -1,0 +1,7 @@
+mkdir nama = membuat folder baru;
+rmdir nama = menghapus folder;
+copy NUI nama.format = membuat file dg format tertentu;
+del nama.format = menghapus file dg format tertentu;
+move nama nama2 = memindahkan folder nama ke nama2 (jika nama2 tidak ada , jika ada maka folder nama hanyak akan berganti nama menjadi nama2)
+xcopy nama nama2 = mencopy folder;
+copy nama nama2 = mengcopy iSi folder nama ke dalam folder nama2
