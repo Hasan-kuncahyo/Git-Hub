@@ -29,6 +29,7 @@ git push origin staging = men-push commit ketika posisi branch yang BUKAN master
 
 git push --set-upstream origin staging = cukup sekali dalam men-git set branch maka kita tidak perlu menggunakan origin kembali,cukup langsung git push saja. ini berfungsi untuk men-set branch saja agar tidak direpotkan dengan origin
 git pull = ketika isi dan commit di git-hub dan dilocal, dan kita ingin menyesuaikan dengan web maka cukup menggunakan git pull, maka log --oneline commitnya akan sesuai dengan web git-hub
+git pull --rebase origin master = ketika error /* failed to push some refs to */ atau ketika gagal push dan ingin me-merge local ke web Git-Hub
 
 git fetch = menyalin branch & commit kelokasi local baru/lain dari repositories yang sudah diclone, BEDA dari git pull adalah ini lebih aman karena menyalinnya sekaligus commitnya.
 
