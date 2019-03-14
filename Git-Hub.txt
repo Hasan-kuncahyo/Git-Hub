@@ -1,3 +1,7 @@
+git --version = cek versi git
+git config --global user.name "nama_akun git" = mengisi username
+git config --global user.email contoh@gmail.com = login dengan gmail yang digunakan untuk mendaftar git
+
 git init = menambahkan folder .git ke dalam folder yg dituju
 git status = melihat status file yang belum/ sudah ter ADD
 git add nama.file = menambahkan ke git
